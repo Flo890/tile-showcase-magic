@@ -6,12 +6,13 @@ interface NavItem {
 interface PortfolioHeaderProps {
   name: string;
   navigation: NavItem[];
+  compact?: boolean;
 }
 
-const PortfolioHeader = ({ name, navigation }: PortfolioHeaderProps) => {
+const PortfolioHeader = ({ name, navigation, compact }: PortfolioHeaderProps) => {
   return (
-    <header className="flex flex-col items-center gap-4 py-12 pb-8">
-      <h1 className="font-display text-3xl tracking-tight text-foreground">{name}</h1>
+    <header className={`flex flex-col items-center ${compact ? 'gap-0 py-6 pb-4' : 'gap-4 py-12 pb-8'}`}>
+      <h1 className={`font-display tracking-tight text-foreground ${compact ? 'text-xl' : 'text-3xl'}`}>{name}</h1>
       <nav className="flex gap-8">
         {navigation.map((item) => (
           <a

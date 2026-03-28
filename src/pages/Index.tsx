@@ -30,7 +30,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <PortfolioHeader name={data.artist.name} navigation={data.navigation} />
       <main className="mx-auto max-w-5xl px-4 pb-16">
-        <div className="grid grid-cols-3 gap-1">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">
           {data.projects.map((project) => (
             <PortfolioTile
               key={project.id}

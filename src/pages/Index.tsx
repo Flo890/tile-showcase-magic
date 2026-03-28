@@ -34,6 +34,7 @@ const Index = () => {
           {data.projects.map((project) => (
             <PortfolioTile
               key={project.id}
+              id={project.id}
               title={project.title}
               thumbnail={project.thumbnail}
               video={project.video}

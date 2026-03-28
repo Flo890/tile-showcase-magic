@@ -1,12 +1,15 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface PortfolioTileProps {
+  id: string;
   title: string;
   thumbnail: string;
   video: string;
 }
 
-const PortfolioTile = ({ title, thumbnail, video }: PortfolioTileProps) => {
+const PortfolioTile = ({ id, title, thumbnail, video }: PortfolioTileProps) => {
+  const navigate = useNavigate();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [hovered, setHovered] = useState(false);
 
@@ -28,6 +31,7 @@ const PortfolioTile = ({ title, thumbnail, video }: PortfolioTileProps) => {
       className="portfolio-tile"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => navigate(`/project/${id}`)}
     >
       <img
         src={thumbnail}

@@ -104,5 +104,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .portfolio-tile {
+    @apply relative aspect-square overflow-hidden cursor-pointer;
+  }
+
+  .portfolio-tile-image {
+    @apply w-full h-full object-cover transition-opacity duration-300;
+  }
+
+  .portfolio-tile-video {
+    @apply absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300;
+  }
+
+  .portfolio-tile-video--active {
+    @apply opacity-100;
+  }
+
+  .portfolio-tile-label {
+    @apply absolute bottom-0 left-0 right-0 px-4 py-3 text-sm tracking-wide
+           translate-y-full transition-transform duration-300;
+    background: hsl(var(--tile-overlay) / 0.85);
+    color: hsl(var(--tile-overlay-text));
+  }
+
+  .portfolio-tile-label--active {
+    @apply translate-y-0;
   }
 }

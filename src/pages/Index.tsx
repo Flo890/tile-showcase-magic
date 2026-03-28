@@ -1,16 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect, useState } from "react";
+import PortfolioHeader from "@/components/PortfolioHeader";
+import PortfolioTile from "@/components/PortfolioTile";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+interface Project {
+  id: string;
+  title: string;
+  thumbnail: string;
+  video: string;
+}
+
+interface PortfolioData {
+  artist: { name: string; tagline: string };
+  navigation: { label: string; href: string }[];
+  projects: Project[];
+}
+
+const Index = () => {
+  const [data, setData] = useState<PortfolioData | null>(null);
+
+  useEffect(() => {
+    fetch("/data/portfolio.json")
+      .then((res) => res.json())
+      .then(setData);
+  }, []);
+
+  if (!data) return null;
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      <PortfolioHeader name={data.artist.name} navigation={data.navigation} />
+      <main className="mx-auto max-w-5xl px-4 pb-16">
+        <div className="grid grid-cols-3 gap-1">
+          {data.projects.map((project) => (
+            <PortfolioTile
+              key={project.id}
+              title={project.title}
+              thumbnail={project.thumbnail}
+              video={project.video}
+            />
+          ))}
+        </div>
+      </main>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;

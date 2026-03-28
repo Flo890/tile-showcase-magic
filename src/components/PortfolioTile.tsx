@@ -32,6 +32,7 @@ const PortfolioTile = ({ id, title, thumbnail, video }: PortfolioTileProps) => {
       className="portfolio-tile"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => navigate(`/project/${id}`)}
     >
       <img
         src={thumbnail}

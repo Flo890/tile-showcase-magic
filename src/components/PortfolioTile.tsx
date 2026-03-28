@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface PortfolioTileProps {
+  id: string;
   title: string;
   thumbnail: string;
   video: string;

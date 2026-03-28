@@ -4,7 +4,7 @@
     "tagline": "Digital Art & Motion"
   },
   "navigation": [
-    { "label": "Work", "href": "#work" },
+    { "label": "Work", "href": "/" },
     { "label": "About", "href": "#about" },
     { "label": "Shop", "href": "#shop" }
   ],
@@ -13,37 +13,49 @@
       "id": "1",
       "title": "Geometric Bloom",
       "thumbnail": "/images/thumb-1.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "An exploration of overlapping organic and geometric forms. Inspired by botanical cross-sections and mid-century color theory, this piece layers coral and teal shapes into a blossoming composition.",
+      "gallery": ["/images/thumb-1.jpg", "/images/thumb-6.jpg", "/images/thumb-4.jpg"]
     },
     {
       "id": "2",
       "title": "Garden Cat",
       "thumbnail": "/images/thumb-2.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "A tuxedo cat finds its place among pink blossoms. Part of a series celebrating the quiet companionship between domestic animals and the gardens they inhabit.",
+      "gallery": ["/images/thumb-2.jpg", "/images/thumb-5.jpg", "/images/thumb-3.jpg"]
     },
     {
       "id": "3",
       "title": "Afternoon Rest",
       "thumbnail": "/images/thumb-3.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "Warm afternoon light spills across a scene of quiet leisure. The interplay of houseplants and soft furnishings creates an intimate portrait of everyday comfort.",
+      "gallery": ["/images/thumb-3.jpg", "/images/thumb-1.jpg", "/images/thumb-2.jpg"]
     },
     {
       "id": "4",
       "title": "Rolling Hills",
       "thumbnail": "/images/thumb-4.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "A whimsical landscape where a lone cottage sits among undulating green hills under a golden sky. Inspired by folk art traditions and the romance of rural solitude.",
+      "gallery": ["/images/thumb-4.jpg", "/images/thumb-5.jpg", "/images/thumb-6.jpg"]
     },
     {
       "id": "5",
       "title": "Moonlit Night",
       "thumbnail": "/images/thumb-5.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "A figure gazes upward at a crescent moon. The deep blues and warm gold create a contemplative mood — a meditation on wonder and the vastness of the night sky.",
+      "gallery": ["/images/thumb-5.jpg", "/images/thumb-4.jpg", "/images/thumb-1.jpg"]
     },
     {
       "id": "6",
       "title": "Fresh Harvest",
       "thumbnail": "/images/thumb-6.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "description": "A celebration of seasonal produce rendered in bold, graphic color. Eggplants, pomegranates, tomatoes and lemons tumble across a fresh mint background.",
+      "gallery": ["/images/thumb-6.jpg", "/images/thumb-2.jpg", "/images/thumb-3.jpg"]
     }
   ]
 }

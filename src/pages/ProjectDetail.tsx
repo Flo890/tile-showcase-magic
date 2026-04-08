@@ -48,7 +48,12 @@ const ProjectDetail = () => {
 
         {/* Hero media — full width video or image */}
         <div className="mb-8 overflow-hidden rounded-sm">
-          {project.video ? (
+          {project.embed ? (
+            <div
+              className="w-full [&>iframe]:w-full [&>iframe]:aspect-video"
+              dangerouslySetInnerHTML={{ __html: project.embed }}
+            />
+          ) : project.video ? (
             <video
               src={project.video}
               controls

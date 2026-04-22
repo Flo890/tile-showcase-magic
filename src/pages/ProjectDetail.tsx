@@ -22,17 +22,48 @@ interface PortfolioData {
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<PortfolioData | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/data/portfolio.json")
-      .then((res) => res.json())
-      .then(setData);
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load portfolio data");
+        return res.json();
+      })
+      .then(setData)
+      .catch((e) => setError(e.message));
   }, []);
 
-  if (!data) return null;
+  if (error) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background">
+        <p className="text-muted-foreground">{error}</p>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background">
+        <p className="text-muted-foreground">Loading…</p>
+      </div>
+    );
+  }
 
   const project = data.projects.find((p) => p.id === id);
-  if (!project) return null;
+  if (!project) {
+    return (
+      <div className="min-h-screen bg-background">
+        <PortfolioHeader name={data.artist.name} navigation={data.navigation} compact />
+        <main className="mx-auto max-w-5xl px-4 pb-16 text-center">
+          <h2 className="mb-4 font-display text-2xl text-foreground">Project not found</h2>
+          <Link to="/" className="text-sm text-muted-foreground underline hover:text-foreground">
+            Back to work
+          </Link>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">

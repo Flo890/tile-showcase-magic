@@ -77,14 +77,9 @@ const ProjectDetail = () => {
           Back to work
         </Link>
 
-        {/* Hero media — full width video or image */}
+        {/* Hero media — full width video or image (embed shown below title) */}
         <div className="mb-8 overflow-hidden rounded-sm">
-          {project.embed ? (
-            <div
-              className="w-full [&>iframe]:w-full [&>iframe]:aspect-video"
-              dangerouslySetInnerHTML={{ __html: project.embed }}
-            />
-          ) : project.video ? (
+          {project.video ? (
             <video
               src={project.video}
               controls
@@ -103,17 +98,29 @@ const ProjectDetail = () => {
           )}
         </div>
 
-        {/* Title + Description */}
-        <div className="mb-12 max-w-2xl">
-          <h2 className="mb-4 font-display text-2xl text-foreground">
+        {/* Title */}
+        <div className="mb-6 max-w-2xl">
+          <h2 className="font-display text-2xl text-foreground">
             {project.title}
           </h2>
-          {project.description && (
+        </div>
+
+        {/* Embed between title and description */}
+        {project.embed && (
+          <div
+            className="mb-8 w-full [&>iframe]:w-full [&>iframe]:aspect-video"
+            dangerouslySetInnerHTML={{ __html: project.embed }}
+          />
+        )}
+
+        {/* Description */}
+        {project.description && (
+          <div className="mb-12 max-w-2xl">
             <p className="leading-relaxed text-muted-foreground">
               {project.description}
             </p>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Gallery grid */}
         {project.gallery && project.gallery.length > 0 && (

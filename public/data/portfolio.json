@@ -1,62 +1,66 @@
 {
   "artist": {
-    "name": "Studio Lumina",
+    "name": "Art.DrFlo",
     "tagline": "Digital Art & Motion"
   },
   "navigation": [
-    { "label": "Work", "href": "/" },
-    { "label": "About", "href": "#about" },
-    { "label": "Shop", "href": "#shop" }
+   
   ],
   "projects": [
     {
       "id": "1",
-      "title": "",
-      "thumbnail": "/images/thumb-1.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "description": "",
+      "title": "Lightpainting Timelapse",
+      "thumbnail": "/images/oktoberfest-lp/oktoberfest-lp-prev_square.jpg",
+      "video": "/images/oktoberfest-lp/oktoberfest-lp-prev_square.mp4",
+      "description": "Lightpainting timelapse brings timelapse and long-exposure visuals into real-speed video. If you want to learn how to create these effects yourself, I recommend reading my tutorial: https://medium.com/how-to-shoot-lightpainting-timelapse/how-to-shoot-lightpainting-timelapse-5dd2e88b4a09",
       "gallery": [],
-      "embed": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/e90892c259.html\"></iframe>"
-    },
+      "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com\/embed\/KR9BL6i_MgQ?si=gDKimslH0jkSukZa\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+        },
     {
       "id": "2",
-      "title": "Garden Cat",
-      "thumbnail": "/images/thumb-2.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "title": "",
+      "thumbnail": "/images/comingsoon1.png",
+      "video": "",
       "description": "A tuxedo cat finds its place among pink blossoms. Part of a series celebrating the quiet companionship between domestic animals and the gardens they inhabit.",
-      "gallery": ["/images/thumb-2.jpg", "/images/thumb-5.jpg", "/images/thumb-3.jpg"]
+      "gallery": [],
+      "nolink": true,
+        "embed": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/e90892c259.html\"></iframe>"
+
     },
     {
       "id": "3",
-      "title": "Afternoon Rest",
-      "thumbnail": "/images/thumb-3.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "description": "Warm afternoon light spills across a scene of quiet leisure. The interplay of houseplants and soft furnishings creates an intimate portrait of everyday comfort.",
-      "gallery": ["/images/thumb-3.jpg", "/images/thumb-1.jpg", "/images/thumb-2.jpg"]
+      "title": "A Christmas (Inter)Railtrip",
+      "thumbnail": "/images/christmas-railtrip/christmas-railtrip.jpg",
+      "video": "/images/christmas-railtrip/christmas-railtrip.mp4",
+      "description": "Video from an interrail trip through Brussels, London and Esslingen during pre-Christmas times 2025.",
+      "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/u3iZ32tTdlY?si=h-bJE_bNcgd_D4gc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     },
     {
       "id": "4",
-      "title": "Rolling Hills",
-      "thumbnail": "/images/thumb-4.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "description": "A whimsical landscape where a lone cottage sits among undulating green hills under a golden sky. Inspired by folk art traditions and the romance of rural solitude.",
-      "gallery": ["/images/thumb-4.jpg", "/images/thumb-5.jpg", "/images/thumb-6.jpg"]
+      "title": "Little Planet",
+      "thumbnail": "/images/little-planet/thumb.jpg",
+      "video": "/images/little-planet/thumb-vid.mp4",
+      "description": "",
+      "gallery": [],
+      "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/q9Rf2OcI0A4?si=pYu63rG_Z_MsTfrF\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     },
     {
       "id": "5",
-      "title": "Moonlit Night",
-      "thumbnail": "/images/thumb-5.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "description": "A figure gazes upward at a crescent moon. The deep blues and warm gold create a contemplative mood — a meditation on wonder and the vastness of the night sky.",
-      "gallery": ["/images/thumb-5.jpg", "/images/thumb-4.jpg", "/images/thumb-1.jpg"]
+      "title": "Munich Timelapse",
+      "thumbnail": "/images/4k-munich/thumb.jpg",
+      "video": "/images/4k-munich/thumb-vid.mp4",
+      "description": "",
+      "gallery": [],
+      "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bVFC_1oVLrM?si=NlmxS83yw-3UkeK8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     },
     {
       "id": "6",
-      "title": "Fresh Harvest",
-      "thumbnail": "/images/thumb-6.jpg",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "title": "Car Timelapse",
+      "thumbnail": "/images/car-timelapse/thumb.jpg",
+      "video": "/images/car-timelapse/thumb-vid.mp4",
       "description": "A celebration of seasonal produce rendered in bold, graphic color. Eggplants, pomegranates, tomatoes and lemons tumble across a fresh mint background.",
-      "gallery": ["/images/thumb-6.jpg", "/images/thumb-2.jpg", "/images/thumb-3.jpg"]
+      "gallery": [],
+      "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rMkYDQGGcDQ?si=Z9RDyxoSBKUwkN6q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     }
   ]
 }

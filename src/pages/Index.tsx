@@ -7,6 +7,7 @@ interface Project {
   title: string;
   thumbnail: string;
   video: string;
+  nolink?: boolean;
 }
 
 interface PortfolioData {
@@ -38,6 +39,7 @@ const Index = () => {
               title={project.title}
               thumbnail={project.thumbnail}
               video={project.video}
+              nolink={project.nolink}
             />
           ))}
         </div>

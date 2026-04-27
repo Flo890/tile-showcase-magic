@@ -8,6 +8,7 @@ interface Project {
   title: string;
   thumbnail: string;
   video: string;
+  videoDetail?: string;
   embed?: string;
   description?: string;
   gallery?: string[];
@@ -79,9 +80,9 @@ const ProjectDetail = () => {
 
         {/* Hero media — full width video or image (embed shown below title) */}
         <div className="mb-8 overflow-hidden rounded-sm">
-          {project.video ? (
+          {project.videoDetail ? (
             <video
-              src={project.video}
+              src={project.videoDetail}
               controls
               autoPlay
               muted
@@ -89,13 +90,7 @@ const ProjectDetail = () => {
               playsInline
               className="w-full"
             />
-          ) : (
-            <img
-              src={project.thumbnail}
-              alt={project.title}
-              className="w-full"
-            />
-          )}
+          ) : (<> </>) }
         </div>
 
         {/* Title */}

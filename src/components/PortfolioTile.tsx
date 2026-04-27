@@ -6,9 +6,10 @@ interface PortfolioTileProps {
   title: string;
   thumbnail: string;
   video: string;
+  nolink?: boolean;
 }
 
-const PortfolioTile = ({ id, title, thumbnail, video }: PortfolioTileProps) => {
+const PortfolioTile = ({ id, title, thumbnail, video, nolink }: PortfolioTileProps) => {
   const navigate = useNavigate();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [hovered, setHovered] = useState(false);
@@ -31,7 +32,11 @@ const PortfolioTile = ({ id, title, thumbnail, video }: PortfolioTileProps) => {
       className="portfolio-tile"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={() => navigate(`/project/${id}`)}
+      onClick={() => {
+        if (!nolink) {
+          navigate(`/project/${id}`);
+        }
+      }}
     >
       <img
         src={thumbnail}

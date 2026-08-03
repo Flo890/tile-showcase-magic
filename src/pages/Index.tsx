@@ -44,6 +44,11 @@ const Index = () => {
           ))}
         </div>
       </main>
+      <div className="flex justify-center py-4">
+        <a href="https://drflo.de/datenschutzerklaerung/" className="text-center">
+          <p>Impressum</p>
+        </a>
+      </div>
     </div>
   );
 };

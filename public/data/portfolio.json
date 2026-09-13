@@ -18,13 +18,12 @@
         },
     {
       "id": "2",
-      "title": "",
-      "thumbnail": "/images/comingsoon1.png",
+      "title": "Book: Intercambio ecuador alemán 2024",
+      "thumbnail": "/images/ecuador-book/ecuador-intercambio-thumb.jpg",
       "video": "",
-      "description": "A tuxedo cat finds its place among pink blossoms. Part of a series celebrating the quiet companionship between domestic animals and the gardens they inhabit.",
+      "description": "Im August 2024 machten sich 12 Jugendleitende im Rahmen des Ecuador Austauschs auf nach Quito. Ecuador Austausch - was ist das eigentlich? Eine Gruppe der Alpenvereins Jugenden München und Oberland besucht für einen Monat bergsportaktive, junge Mitglieder der Asociacion de Excursionismo y Andinismo de Pichincha. Im darauffolgenden Jahr besuchen dann unsere ecuadorianischen Freundinnen und Freunde ihre deutschen Austauschpartner*innen in München. Diese Zusammenarbeit der Sektion Oberland und ihrem ecuadorianischen Pendant existiert bereits seit 1990 und findet in einem bijährlichen Rhythmus statt (wenn nicht gerade eine globale Pandemie dazwischenkommt.) Dieses Fotobuch stellt den Ecuador Austausch vor, und hält Momente und Erinnerungen des Ecuador Austauschs 2024 aus meiner Perspektive fest - neben dieser gibt es natürlich auch noch viele Andere. Das Buch hat nicht den Anspruch eines Reiseberichts oder Tourenführers alle Aktivitäten nachvollziehen zu können, oder über bergsportliche Highlights zu berichten. Es ist weder vollständig, noch chronologisch. Ich versuche damit unsere Erlebnisse photographisch abzubilden, das Gefühl des Ecuadoraustauschs festzuhalten, und anderen einen Eindruck der dortigen Natur, Kultur, und Lebensweise zu vermitteln. Auf manchen Seiten kann man auch ein paar Dinge über Ecuador lernen. Viel Spaß beim Durchblättern - hier online oder noch besser gedruckt in der Bibliothek des Alpinen Museums des DAV ( https://opac.winbiap.de/alpenverein/detail.aspx?Id=102305 ).",
       "gallery": [],
-      "nolink": true,
-        "embed": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/e90892c259.html\"></iframe>"
+      "embed": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/e90892c259.html\"></iframe>"
 
     },
     {
@@ -61,6 +60,17 @@
       "description": "A celebration of seasonal produce rendered in bold, graphic color. Eggplants, pomegranates, tomatoes and lemons tumble across a fresh mint background.",
       "gallery": [],
       "embed":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rMkYDQGGcDQ?si=Z9RDyxoSBKUwkN6q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    },
+    {
+      "id": "7",
+      "title": "",
+      "thumbnail": "/images/comingsoon1.png",
+      "video": "",
+      "description": "A tuxedo cat finds its place among pink blossoms. Part of a series celebrating the quiet companionship between domestic animals and the gardens they inhabit.",
+      "gallery": [],
+      "nolink": true,
+        "embed": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/e90892c259.html\"></iframe>"
+
     }
   ]
 }
